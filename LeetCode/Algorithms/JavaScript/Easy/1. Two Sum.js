@@ -38,3 +38,15 @@ var twoSum = function (nums, target) {
     }
   }
 }
+
+// My second approach: One-pass Hash Table
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+var twoSum = function (nums, target) {
+  let map = {}
+  for (let i = 0; i < nums.length; i++) {
+    if (map[nums[i]] !== undefined) return [i, map[nums[i]]]
+    map[target - nums[i]] = i
+  }
+}
