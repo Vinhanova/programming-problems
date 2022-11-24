@@ -25,9 +25,6 @@
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
-//Runtime: 120 ms, faster than 79.69% of JavaScript online submissions for Contains Duplicate.
-//Memory Usage: 51.3 MB, less than 33.14% of JavaScript online submissions for Contains Duplicate.
-
 var containsDuplicate = function (nums) {
   map = {}
   for (let i = 0; i < nums.length; i++) {
@@ -41,9 +38,6 @@ var containsDuplicate = function (nums) {
 // My second approach: Adopted Set and removed search *
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-
-//Runtime: 84 ms, faster than 97.13% of JavaScript online submissions for Contains Duplicate.
-//Memory Usage: 49.9 MB, less than 87.97% of JavaScript online submissions for Contains Duplicate.
 
 var containsDuplicate = function (nums) {
   set = new Set()
