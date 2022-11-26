@@ -40,7 +40,7 @@ var fizzBuzz = function (n) {
   return resultArr
 }
 
-// My second approach: Brute force // Submitted
+// My second approach: Different brute force // Submitted
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 
