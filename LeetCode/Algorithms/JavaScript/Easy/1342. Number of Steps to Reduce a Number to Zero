@@ -43,7 +43,7 @@ var numberOfSteps = function (num) {
   else return 1 + numberOfSteps(num - 1)
 }
 
-// My second approach: Brute force // Submitted
+// My second approach: Brute force
 // Time Complexity: O(log n)
 // Space Complexity: O(1)
 
@@ -57,6 +57,22 @@ var numberOfSteps = function (num) {
     // OR
     //if (n % 2 == 0) n /= 2
     //else n--
+  }
+
+  return res
+}
+
+// My third approach: Bitwise Operators // Submitted
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+
+var numberOfSteps = function (num) {
+  let res = 0
+  let n = num
+
+  while (n >= 1) {
+    res++
+    n & 1 ? (n = ~-n) : (n >>= 1)
   }
 
   return res
