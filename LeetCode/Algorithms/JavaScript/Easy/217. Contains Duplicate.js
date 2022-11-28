@@ -42,7 +42,7 @@ var containsDuplicate = function (nums) {
 var containsDuplicate = function (nums) {
   set = new Set()
   for (let i = 0; i < nums.length; i++) {
-    if (set.add(nums[i]).size != i + 1) return true // When tryind to add if it already exists does not add, so size remains the same // Example 1: 1 2 3 3
+    if (set.add(nums[i]).size != i + 1) return true // When trying to add if it already exists does not add, so size remains the same // Example 1: 1 2 3 3
   }
 
   return false
