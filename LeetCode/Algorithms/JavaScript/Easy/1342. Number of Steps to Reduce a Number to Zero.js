@@ -78,7 +78,7 @@ var numberOfSteps = function (num) {
   return res
 }
 
-// My forth approach: Compressed and unreadable version for fun
+// My fourth approach: Compressed and unreadable version for fun
 // Time Complexity: O(log n)
 // Space Complexity: O(1)
 
