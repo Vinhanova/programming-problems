@@ -64,31 +64,3 @@ var middleNode = function (head) {
 
   return fast.next ? slow.next : slow
 }
-
-// My fourth approach: Fast and slow pointers but cleaner // Submitted
-// Time Complexity: O(n)
-// Space Complexity: O(1)
-
-var middleNode = function (head) {
-  slow = fast = head
-
-  while (fast && fast.next) {
-    slow = slow.next
-    fast = fast.next.next
-  }
-  return slow
-}
-
-// My fifth approach: Fast and slow pointers reusing head
-// Time Complexity: O(n)
-// Space Complexity: O(1)
-
-var middleNode = function (head) {
-  fast = head
-
-  while (fast && fast.next) {
-    head = head.next
-    fast = fast.next.next
-  }
-  return head
-}
