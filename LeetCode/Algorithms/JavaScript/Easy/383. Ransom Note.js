@@ -110,3 +110,27 @@ var canConstruct = function (ransomNote, magazine) {
 
   return true
 }
+
+// Approach to study:*
+
+var canConstruct = function (ransomNote, magazine) {
+  if (ransomNote.length > magazine.length) {
+    return false
+  }
+
+  let freq = new Array(26).fill(0)
+
+  for (let i = 0; i < magazine.length; i++) {
+    freq[magazine.charCodeAt(i) - 97]++
+  }
+  for (let j = 0; j < ransomNote.length; j++) {
+    freq[ransomNote.charCodeAt(j) - 97]--
+  }
+
+  for (let k = 0; k < freq.length; k++) {
+    if (freq[k] < 0) {
+      return false
+    }
+  }
+  return true
+}
