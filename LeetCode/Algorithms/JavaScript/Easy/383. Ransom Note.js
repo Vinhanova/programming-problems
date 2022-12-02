@@ -86,3 +86,27 @@ var canConstruct = function (ransomNote, magazine) {
 
   return true
 }
+
+// My fifth approach: Testing other ways*
+
+var canConstruct = function (ransomNote, magazine) {
+  let rnMap = new Map()
+  let mMap = new Map()
+
+  for (let i = 0; i < ransomNote.length; i++) {
+    if (rnMap.has(ransomNote[i])) rnMap.set(ransomNote[i], rnMap.get(ransomNote[i]) + 1)
+    if (!rnMap.has(ransomNote[i])) rnMap.set(ransomNote[i], 1)
+  }
+  for (let i = 0; i < magazine.length; i++) {
+    if (mMap.has(magazine[i])) mMap.set(magazine[i], mMap.get(magazine[i]) + 1)
+    if (!mMap.has(magazine[i])) mMap.set(magazine[i], 1)
+  }
+
+  rnMap = Array.from(rnMap)
+
+  for (let i = 0; i < rnMap.length; i++) {
+    if (!mMap.has(rnMap[i][0]) || mMap.get(rnMap[i][0]) < rnMap[i][1]) return false
+  }
+
+  return true
+}
