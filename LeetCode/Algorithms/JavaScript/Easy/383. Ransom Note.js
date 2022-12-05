@@ -81,13 +81,17 @@ var canConstruct = function (ransomNote, magazine) {
 
   for ([char, value] of Object.entries(map)) {
     match = magazine.match(new RegExp(`${char}`, 'gi'))
-    if (match === null || match.length < value) return false
+    if (match === null || match.length < value) {
+      return false
+    }
   }
 
   return true
 }
 
 // My fifth approach: Testing other ways*
+
+// ( Two Hash Maps!* )
 
 var canConstruct = function (ransomNote, magazine) {
   let rnMap = new Map()
@@ -111,7 +115,9 @@ var canConstruct = function (ransomNote, magazine) {
   return true
 }
 
-// Approach to study:*
+// My sixth approach: Charcode // Submitted
+// Time Complexity: O(rm) r: ransomNote, m: magazine
+// Space Complexity: O(1) (max 26 lower case letters)
 
 var canConstruct = function (ransomNote, magazine) {
   if (ransomNote.length > magazine.length) {
