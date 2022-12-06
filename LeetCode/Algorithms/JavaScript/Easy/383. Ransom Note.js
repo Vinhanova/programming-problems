@@ -70,9 +70,15 @@ var canConstruct = function (ransomNote, magazine) {
   return true
 }
 
-// My fourth approach: Testing other ways
+// My fourth approach:
+// Time Complexity: O(m) r: ransomNote, m: magazine (O(r + m) => O(m) as m >= r)
+// Space Complexity: O(1) (max 26 lower case letters)
 
 var canConstruct = function (ransomNote, magazine) {
+  if (ransomNote.length > magazine.length) {
+    return false
+  }
+
   map = {}
 
   for (i = 0; i < ransomNote.length; i++) {
@@ -89,34 +95,8 @@ var canConstruct = function (ransomNote, magazine) {
   return true
 }
 
-// My fifth approach: Testing other ways*
-
-// ( Two Hash Maps!* )
-
-var canConstruct = function (ransomNote, magazine) {
-  let rnMap = new Map()
-  let mMap = new Map()
-
-  for (let i = 0; i < ransomNote.length; i++) {
-    if (rnMap.has(ransomNote[i])) rnMap.set(ransomNote[i], rnMap.get(ransomNote[i]) + 1)
-    if (!rnMap.has(ransomNote[i])) rnMap.set(ransomNote[i], 1)
-  }
-  for (let i = 0; i < magazine.length; i++) {
-    if (mMap.has(magazine[i])) mMap.set(magazine[i], mMap.get(magazine[i]) + 1)
-    if (!mMap.has(magazine[i])) mMap.set(magazine[i], 1)
-  }
-
-  rnMap = Array.from(rnMap)
-
-  for (let i = 0; i < rnMap.length; i++) {
-    if (!mMap.has(rnMap[i][0]) || mMap.get(rnMap[i][0]) < rnMap[i][1]) return false
-  }
-
-  return true
-}
-
-// My sixth approach: Charcode // Submitted
-// Time Complexity: O(rm) r: ransomNote, m: magazine
+// My fifth approach: Charcode // Submitted
+// Time Complexity: O(m) r: ransomNote, m: magazine (O(r + m) => O(m) as m >= r)
 // Space Complexity: O(1) (max 26 lower case letters)
 
 var canConstruct = function (ransomNote, magazine) {
