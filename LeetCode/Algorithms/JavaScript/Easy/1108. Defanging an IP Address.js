@@ -40,3 +40,17 @@ var defangIPaddr = function (address) {
 var defangIPaddr = function (address) {
   return address.replaceAll('.', '[.]')
 }
+
+// My fourth approach: For loop
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+var defangIPaddr = function (address) {
+  let newAddress = ''
+
+  for (let i = 0; i < address.length; i++) {
+    newAddress += address[i] == '.' ? '[.]' : address[i]
+  }
+
+  return newAddress
+}
