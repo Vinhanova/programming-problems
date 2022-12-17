@@ -1,10 +1,11 @@
 # Programming Problems
-Practicing programming problems logging my solutions • Python &amp; JavaScript &lt;Updating>
+Practicing programming problems logging my solutions • JavaScript, Python &amp; TypeScript &lt;Updating>
 
-## LeetCode
+## [LeetCode](https://leetcode.com/)
 - [Algorithms](#algorithms)
+<!-- - [Database](#database) -->
 
-## Algorithms
+## [Algorithms](https://leetcode.com/problemset/algorithms/)
 
 |  #  |      Title     |   Solutions   |    Time   |  Space  |  Difficulty  |  Tags  
 |-----|----------------|---------------|-----------|---------|--------------|--------
