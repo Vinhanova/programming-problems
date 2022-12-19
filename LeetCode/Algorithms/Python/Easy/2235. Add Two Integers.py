@@ -14,7 +14,7 @@
   Constraints:
     -100 <= num1, num2 <= 100
 """
-
+# My first approach: # Submitted
 # Time Complexity: O(1)
 # Space Complexity: O(1)
 

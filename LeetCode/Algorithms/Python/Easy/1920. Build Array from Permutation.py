@@ -1,4 +1,4 @@
-/*
+"""
   Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
   A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 
@@ -17,34 +17,30 @@
     ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
         = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]]
         = [4,5,0,1,2,3]
-
+ 
   Constraints:
     1 <= nums.length <= 1000
     0 <= nums[i] < nums.length
     The elements in nums are distinct.
 
-  @param {number[]} nums
-  @return {number[]}
-*/
+Follow-up: Can you solve it without using an extra space (i.e., O(1) memory)?
+"""
 
-// My first approach: Brute force
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+# My first approach: For loop
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
-var buildArray = function (nums) {
-  let res = []
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        newNums = []
+        for num in nums:
+            newNums.append(nums[num])
+        return newNums
 
-  for (let i = 0; i < nums.length; i++) {
-    res.push(nums[nums[i]])
-  }
+# My second approach: Instantaneous return # Submitted
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 
-  return res
-}
-
-// My second approach: Instantaneous return // Submitted
-// Time Complexity: O(n)
-// Space Complexity: O(1)
-
-var buildArray = function (nums) {
-  return nums.map(n => nums[n])
-}
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        return [nums[num] for num in nums]
