@@ -27,7 +27,7 @@
   @return {number[]}
 */
 
-// My first approach: Brute force
+// My first approach: Brute force with imperative code
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
@@ -41,7 +41,7 @@ var buildArray = function (nums) {
   return res
 }
 
-// My second approach: Instantaneous return // Submitted
+// My second approach: Instantaneous return with declarative code // Submitted
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 
