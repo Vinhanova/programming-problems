@@ -21,7 +21,7 @@
   @return {boolean}
 */
 
-// My first approach: One-pass Hash Table *
+// My first approach: Hash Table
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
@@ -35,7 +35,7 @@ var containsDuplicate = function (nums) {
   return false
 }
 
-// My second approach: Adopted Set and removed search *
+// My second approach: Adopted Set and removed search
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 

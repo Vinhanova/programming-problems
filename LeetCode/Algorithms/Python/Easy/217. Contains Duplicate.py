@@ -18,7 +18,7 @@
     -109 <= nums[i] <= 109
 """
 
-# My first approach: Hashmap
+# My first approach: Hash Table
 # Time Complexity: O(n)
 # Space Complexity: O(n)
 
