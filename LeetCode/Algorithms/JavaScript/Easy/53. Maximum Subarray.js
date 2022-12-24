@@ -42,7 +42,7 @@ var maxSubArray = function (nums) {
   return maxSum
 }
 
-// My second approach: *
+// My second approach: Dynamic Programming, Kadane's Algorithm
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 

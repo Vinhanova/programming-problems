@@ -36,6 +36,16 @@ class Solution:
     
     return max_subarray
 
-# My second approach: *
+# My second approach: Dynamic Programming, Kadane's Algorithm
 # Time Complexity: O(n)
 # Space Complexity: O(1)
+
+class Solution:
+  def maxSubArray(self, nums: List[int]) -> int:
+    maxSum = currSum = nums[0]
+
+    for num in nums[1:]:
+      currSum = max(num, currSum + num)
+      maxSum = max(maxSum, currSum)
+
+    return maxSum
