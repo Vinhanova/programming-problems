@@ -70,7 +70,7 @@ var canConstruct = function (ransomNote, magazine) {
   return true
 }
 
-// My fourth approach:
+// My fourth approach: One HashMap
 // Time Complexity: O(m) r: ransomNote, m: magazine (O(r + m) => O(m) as m >= r)
 // Space Complexity: O(1) (max 26 lower case letters)
 
