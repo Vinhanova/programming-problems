@@ -26,7 +26,7 @@
 
 // My first approach: Creating an auxiliary array
 // Time Complexity: O(n)
-// Space Complexity: O(1) // O(n) but output space not usually counted
+// Space Complexity: O(n)
 
 var runningSum = function (nums) {
   auxArr = []
@@ -38,7 +38,7 @@ var runningSum = function (nums) {
 
 // My second approach: Removing the unnecessary if condition
 // Time Complexity: O(n)
-// Space Complexity: O(1) // O(n) but output space not usually counted
+// Space Complexity: O(n)
 
 var runningSum = function (nums) {
   auxArr = [nums[0]]
@@ -50,7 +50,7 @@ var runningSum = function (nums) {
 
 // My third approach: Using input array for output saving space (not recommended)
 // Time Complexity: O(n)
-// Space Complexity: O(1) // Truly O(1) now
+// Space Complexity: O(1)
 
 var runningSum = function (nums) {
   for (let i = 1; i < nums.length; i++) {
