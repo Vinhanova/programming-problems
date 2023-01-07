@@ -26,7 +26,7 @@
 
 // My first approach: Brute force
 // Time Complexity: O(n)
-// Space Complexity: O(1)
+// Space Complexity: O(n)
 
 var fizzBuzz = function (n) {
   let resultArr = []
@@ -42,7 +42,7 @@ var fizzBuzz = function (n) {
 
 // My second approach: Different brute force // Submitted
 // Time Complexity: O(n)
-// Space Complexity: O(1)
+// Space Complexity: O(n)
 
 var fizzBuzz = function (n) {
   let resultArr = []
