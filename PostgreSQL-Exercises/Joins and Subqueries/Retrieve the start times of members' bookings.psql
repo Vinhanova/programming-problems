@@ -19,6 +19,7 @@ WHERE
 	  		surname = 'Farrell'
 	)
 
+
 -- Inner Join:
 
 SELECT
@@ -26,13 +27,12 @@ SELECT
 FROM
 	cd.bookings b
 	INNER JOIN
-		cd.members m
-	ON
-		b.memid = m.memid
+	cd.members m ON b.memid = m.memid
 WHERE
 	m.firstname = 'David'
 	AND
 	m.surname = 'Farrell'
+
 
 -- Different Syntax:
 
