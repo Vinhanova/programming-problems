@@ -21,7 +21,8 @@ WHERE
 ORDER BY
 	surname, firstname
 
--- Self join:
+
+-- Self Join:
 
 SELECT DISTINCT
 	m2.firstname as firstname,
@@ -30,5 +31,19 @@ FROM
 	cd.members m1
 	INNER JOIN
 	cd.members m2 ON m1.recommendedby = m2.memid
+ORDER BY
+	surname, firstname
+
+
+-- Self Join With Different Syntax:
+
+SELECT DISTINCT
+	m2.firstname as firstname,
+	m2.surname as surname
+FROM
+	cd.members m1,
+	cd.members m2
+WHERE
+	m1.recommendedby = m2.memid
 ORDER BY
 	surname, firstname

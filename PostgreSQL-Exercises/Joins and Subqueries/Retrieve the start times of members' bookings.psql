@@ -34,7 +34,7 @@ WHERE
 	m.surname = 'Farrell'
 
 
--- Different Syntax:
+-- Inner Join With Different Syntax:
 
 SELECT
 	b.starttime
