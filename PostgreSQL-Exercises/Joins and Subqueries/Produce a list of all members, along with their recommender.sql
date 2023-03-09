@@ -3,7 +3,7 @@
   Ensure that results are ordered by (surname, firstname).
 */
 
--- Left Join:
+-- Explicit Left Join:
 
 SELECT
 	m1.firstname as memfname,

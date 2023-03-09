@@ -3,6 +3,9 @@
   Return a list of start time and facility name pairings, ordered by the time.
 */
 
+
+-- Implicit Inner Join:
+
 SELECT
 	b.starttime AS start,
 	f.name
@@ -21,7 +24,7 @@ ORDER BY
 	b.starttime ASC
 
 
--- Inner Join:
+-- Explicit Inner Join:
 
 SELECT
 	b.starttime AS start,

@@ -20,7 +20,7 @@ WHERE
 	)
 
 
--- Inner Join:
+-- Explicit Inner Join:
 
 SELECT
 	starttime
@@ -34,7 +34,7 @@ WHERE
 	m.surname = 'Farrell'
 
 
--- Inner Join With Different Syntax:
+-- Implicit Inner Join:
 
 SELECT
 	b.starttime

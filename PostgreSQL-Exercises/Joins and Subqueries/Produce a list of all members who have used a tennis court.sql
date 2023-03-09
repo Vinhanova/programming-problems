@@ -4,7 +4,7 @@
   Ensure no duplicate data, and order by the member name followed by the facility name.
 */
 
--- Using Concat_ws:
+-- Concat_ws:
 
 SELECT DISTINCT
 	CONCAT_WS(' ', m.firstname, m.surname) AS member, -- OR --> CONCAT(m.firstname, ' ', m.surname) AS member, 
@@ -18,12 +18,12 @@ WHERE
 	AND
 	b.facid = f.facid
 	AND
-	f.name LIKE 'Tennis%'
+	f.name LIKE 'Tennis%' -- OR --> f.name in ('Tennis Court 2','Tennis Court 1')
 ORDER BY
 	member, facility
 
 
--- Using String Concatenation Operator:
+-- String Concatenation Operator:
 
 SELECT DISTINCT
 	m.firstname || ' ' || m.surname AS member,
@@ -37,6 +37,6 @@ WHERE
 	AND
 	b.facid = f.facid
 	AND
-	f.name LIKE 'Tennis%'
+	f.name LIKE 'Tennis%' -- OR --> f.name in ('Tennis Court 2','Tennis Court 1')
 ORDER BY
 	member, facility

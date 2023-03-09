@@ -22,7 +22,7 @@ ORDER BY
 	surname, firstname
 
 
--- Self Join:
+-- Explicit Self Join:
 
 SELECT DISTINCT
 	m2.firstname as firstname,
@@ -35,7 +35,7 @@ ORDER BY
 	surname, firstname
 
 
--- Self Join With Different Syntax:
+-- Implicit Self Join:
 
 SELECT DISTINCT
 	m2.firstname as firstname,
