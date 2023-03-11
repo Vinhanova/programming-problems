@@ -4,6 +4,7 @@
   Ensure no duplicate data, and order by the member name followed by the facility name.
 */
 
+
 -- Concat_ws:
 
 SELECT DISTINCT

@@ -3,6 +3,7 @@
   Ensure that there are no duplicates in the list, and that each firstname + surname pairing is formatted as a column and ordered.
 */
 
+
 -- Correlated Subquery:
 
 SELECT DISTINCT

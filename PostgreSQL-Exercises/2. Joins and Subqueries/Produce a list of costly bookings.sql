@@ -5,6 +5,7 @@
   Order by descending cost, and do not use any subqueries.
 */
 
+
 -- One Case:
 
 SELECT

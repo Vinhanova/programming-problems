@@ -3,6 +3,7 @@
   Ensure that results are ordered by (surname, firstname).
 */
 
+
 -- Explicit Left Join:
 
 SELECT
