@@ -3,11 +3,11 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 - [LeetCode](#leetcode)
 - [PostgreSQL-Exercises](#postgresql-exercises)
 
-## [LeetCode](https://leetcode.com/)
+# [LeetCode](https://leetcode.com/)
 - [Algorithms](#algorithms)
 <!-- - [Database](#database) -->
 
-### [Algorithms](https://leetcode.com/problemset/algorithms/)
+## [Algorithms](https://leetcode.com/problemset/algorithms/)
 
 |  #  |      Title     |   Solutions   |    Time   |  Space  |  Difficulty  |  Tags  
 |-----|----------------|---------------|-----------|---------|--------------|--------
@@ -32,13 +32,23 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 |2235|[Add Two Integers](https://leetcode.com/problems/add-two-integers/)|[JavaScript](https://github.com/Vinhanova/programming-problems/blob/main/LeetCode/Algorithms/JavaScript/Easy/2235.%20Add%20Two%20Integers.js)<br />[Python](https://github.com/Vinhanova/programming-problems/blob/main/LeetCode/Algorithms/Python/Easy/2235.%20Add%20Two%20Integers.py)|O(1)|O(1)|:green_square: Easy|Math
 |2469|[Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/)|[JavaScript](https://github.com/Vinhanova/programming-problems/blob/main/LeetCode/Algorithms/JavaScript/Easy/2469.%20Convert%20the%20Temperature.js)|O(1)|O(1)|:green_square: Easy|Math
 
-## [PostgreSQL-Exercises](https://pgexercises.com/)
+# [PostgreSQL-Exercises](https://pgexercises.com/)
 - [Simple SQL Queries](#simple-sql-queries)
 - [Joins and Subqueries]()
 
-### [Simple SQL Queries](https://pgexercises.com/questions/basic/)
+## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
 |  #  |      Title     |   Solution
 |-----|----------------|---------------
 |1|[Retrieve everything from a table](https://pgexercises.com/questions/basic/selectall.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Retrieve%20everything%20from%20a%20table.sql)
 |2|[Retrieve specific columns from a table](https://pgexercises.com/questions/basic/selectspecific.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Retrieve%20specific%20columns%20from%20a%20table.sql)
+|3|[Control which rows are retrieved](https://pgexercises.com/questions/basic/where.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Control%20which%20rows%20are%20retrieved.sql)
+|4|[Control which rows are retrieved - part 2](https://pgexercises.com/questions/basic/where2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Control%20which%20rows%20are%20retrieved%20-%20part%202.sql)
+|5|[Basic string searches](https://pgexercises.com/questions/basic/where3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Basic%20string%20searches.sql)
+|6|[Matching against multiple possible values](https://pgexercises.com/questions/basic/where4.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Matching%20against%20multiple%20possible%20values.sql)
+|7|[Classify results into buckets](https://pgexercises.com/questions/basic/classify.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Classify%20results%20into%20buckets.sql)
+|8|[Working with dates](https://pgexercises.com/questions/basic/date.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Working%20with%20dates.sql)
+|9|[Removing duplicates and ordering results](https://pgexercises.com/questions/basic/unique.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Removing%20duplicates%20and%20ordering%20results.sql)
+|10|[Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Combining%20results%20from%20multiple%20queries.sql)
+|11|[Simple aggregation](https://pgexercises.com/questions/basic/agg.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Simple%20aggregation.sql)
+|12|[More aggregation](https://pgexercises.com/questions/basic/agg2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/More%20aggregation.sql)
