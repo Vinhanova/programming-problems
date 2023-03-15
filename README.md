@@ -5,7 +5,7 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 
 # [LeetCode](https://leetcode.com/)
 - [Algorithms](#algorithms)
-<!-- - [Database](#database) -->
+- Database
 
 ## [Algorithms](https://leetcode.com/problemset/algorithms/)
 
@@ -34,7 +34,9 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 
 # [PostgreSQL-Exercises](https://pgexercises.com/)
 - [Simple SQL Queries](#simple-sql-queries)
-- [Joins and Subqueries]()
+- Joins and Subqueries
+- Modifying data
+- Aggregation
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
