@@ -1,7 +1,7 @@
 # Programming Problems
 Practicing programming problems logging my solutions • JavaScript, Python &amp; TypeScript &lt;Updating>
 - [LeetCode](#leetcode)
-- [PostgreSQL-Exercises](#postgresql-exercises)
+- [PostgreSQL Exercises](#postgresql-exercises)
 
 # [LeetCode](https://leetcode.com/)
 - [Algorithms](#algorithms)
@@ -32,7 +32,7 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 |2235|[Add Two Integers](https://leetcode.com/problems/add-two-integers/)|[JavaScript](https://github.com/Vinhanova/programming-problems/blob/main/LeetCode/Algorithms/JavaScript/Easy/2235.%20Add%20Two%20Integers.js)<br />[Python](https://github.com/Vinhanova/programming-problems/blob/main/LeetCode/Algorithms/Python/Easy/2235.%20Add%20Two%20Integers.py)|O(1)|O(1)|:green_square: Easy|Math
 |2469|[Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/)|[JavaScript](https://github.com/Vinhanova/programming-problems/blob/main/LeetCode/Algorithms/JavaScript/Easy/2469.%20Convert%20the%20Temperature.js)|O(1)|O(1)|:green_square: Easy|Math
 
-# [PostgreSQL-Exercises](https://pgexercises.com/)
+# [PostgreSQL Exercises](https://pgexercises.com/)
 - [Simple SQL Queries](#simple-sql-queries)
 - Joins and Subqueries
 - Modifying data
