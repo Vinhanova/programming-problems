@@ -35,7 +35,7 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 # [PostgreSQL Exercises](https://pgexercises.com/)
 - [Simple SQL Queries](#simple-sql-queries)
 - [Joins and Subqueries](#joins-and-subqueries)
-- Modifying data
+- [Modifying data](#modifying-data)
 - Aggregation
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
@@ -67,3 +67,17 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 |6|[Produce a list of costly bookings](https://pgexercises.com/questions/joins/threejoin2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20costly%20bookings.sql)
 |7|[Produce a list of all members, along with their recommender, using no joins](https://pgexercises.com/questions/joins/sub.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20all%20members%2C%20along%20with%20their%20recommender%2C%20using%20no%20joins.sql)
 |8|[Produce a list of costly bookings, using a subquery](https://pgexercises.com/questions/joins/tjsub.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20costly%20bookings%2C%20using%20a%20subquery.sql)
+
+## [Modifying data](https://pgexercises.com/questions/updates/)
+
+|  #  |      Title     |   Solution
+|-----|----------------|---------------
+|1|[Insert some data into a table](https://pgexercises.com/questions/updates/insert.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Insert%20some%20data%20into%20a%20table.sql)
+|2|[Insert multiple rows of data into a table](https://pgexercises.com/questions/updates/insert2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Insert%20multiple%20rows%20of%20data%20into%20a%20table.sql)
+|3|[Insert calculated data into a table](https://pgexercises.com/questions/updates/insert3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Insert%20calculated%20data%20into%20a%20table.sql)
+|4|[Update some existing data](https://pgexercises.com/questions/updates/update.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Update%20some%20existing%20data.sql)
+|5|[Update multiple rows and columns at the same time](https://pgexercises.com/questions/updates/updatemultiple.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Update%20multiple%20rows%20and%20columns%20at%20the%20same%20time.sql)
+|6|[Update a row based on the contents of another row](https://pgexercises.com/questions/updates/updatecalculated.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Update%20a%20row%20based%20on%20the%20contents%20of%20another%20row.sql)
+|7|[Delete all bookings](https://pgexercises.com/questions/updates/delete.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Delete%20all%20bookings.sql)
+|8|[Delete a member from the cd.members table](https://pgexercises.com/questions/updates/deletewh.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Delete%20a%20member%20from%20the%20cd.members%20table.sql)
+|9|[Delete based on a subquery](https://pgexercises.com/questions/updates/deletewh2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Delete%20based%20on%20a%20subquery.sql)
