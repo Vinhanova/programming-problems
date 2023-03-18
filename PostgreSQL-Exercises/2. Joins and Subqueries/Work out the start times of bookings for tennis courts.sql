@@ -7,37 +7,37 @@
 -- Implicit Inner Join:
 
 SELECT
-	b.starttime AS start,
-	f.name
+  b.starttime AS start,
+  f.name
 FROM
-	cd.bookings b,
-	cd.facilities f
+  cd.bookings b,
+  cd.facilities f
 WHERE
-	b.facid = f.facid
-	AND
-	f.name LIKE 'Tennis Court%' -- OR --> f.name in ('Tennis Court 1','Tennis Court 2')
-	AND
-	b.starttime >= '2012-09-21'
-	AND
-	b.starttime < '2012-09-22'
+  b.facid = f.facid
+  AND
+  f.name LIKE 'Tennis Court%' -- OR --> f.name in ('Tennis Court 1','Tennis Court 2')
+  AND
+  b.starttime >= '2012-09-21'
+  AND
+  b.starttime < '2012-09-22'
 ORDER BY
-	b.starttime ASC
+  b.starttime ASC
 
 
 -- Explicit Inner Join:
 
 SELECT
-	b.starttime AS start,
-	f.name
+  b.starttime AS start,
+  f.name
 FROM
-	cd.bookings b
+  cd.bookings b
   INNER JOIN
-	cd.facilities f ON b.facid = f.facid
+  cd.facilities f ON b.facid = f.facid
 WHERE
-	f.name in ('Tennis Court 1','Tennis Court 2')
-	AND
-	b.starttime >= '2012-09-21'
-	AND
-	b.starttime < '2012-09-22'
+  f.name in ('Tennis Court 1','Tennis Court 2')
+  AND
+  b.starttime >= '2012-09-21'
+  AND
+  b.starttime < '2012-09-22'
 ORDER BY
-	b.starttime ASC
+  b.starttime ASC

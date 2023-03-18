@@ -3,8 +3,8 @@
 */
 
 SELECT
-	COUNT(*)
+  COUNT(*)
 FROM
-	cd.facilities
+  cd.facilities
 WHERE
-	guestcost >= 10
+  guestcost >= 10

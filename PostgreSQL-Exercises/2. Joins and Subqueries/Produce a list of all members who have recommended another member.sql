@@ -7,43 +7,43 @@
 -- Subquery:
 
 SELECT
-	firstname,
-	surname
+  firstname,
+  surname
 FROM
-	cd.members
+  cd.members
 WHERE
-	memid IN (
-		SELECT
-	  		recommendedby
-	  	FROM
-	  		cd.members
-	)
+  memid IN (
+    SELECT
+        recommendedby
+      FROM
+        cd.members
+  )
 ORDER BY
-	surname, firstname
+  surname, firstname
 
 
 -- Explicit Self Join:
 
 SELECT DISTINCT
-	m2.firstname as firstname,
-	m2.surname as surname
+  m2.firstname as firstname,
+  m2.surname as surname
 FROM
-	cd.members m1
-	INNER JOIN
-	cd.members m2 ON m1.recommendedby = m2.memid
+  cd.members m1
+  INNER JOIN
+  cd.members m2 ON m1.recommendedby = m2.memid
 ORDER BY
-	surname, firstname
+  surname, firstname
 
 
 -- Implicit Self Join:
 
 SELECT DISTINCT
-	m2.firstname as firstname,
-	m2.surname as surname
+  m2.firstname as firstname,
+  m2.surname as surname
 FROM
-	cd.members m1,
-	cd.members m2
+  cd.members m1,
+  cd.members m2
 WHERE
-	m1.recommendedby = m2.memid
+  m1.recommendedby = m2.memid
 ORDER BY
-	surname, firstname
+  surname, firstname

@@ -8,10 +8,10 @@
 -- Using Where (way better and simpler):
 
 SELECT
-	name,
-	revenue
+  name,
+  revenue
 FROM (
-		SELECT
+    SELECT
       f.name,
       SUM(b.slots *
         CASE
@@ -25,20 +25,20 @@ FROM (
       cd.facilities f ON b.facid = f.facid
     GROUP BY
       f.name
-	) AS fac
+  ) AS fac
 WHERE
   revenue < 1000
 ORDER BY
-	revenue
+  revenue
 
 
 -- Using Having:
 
 SELECT
-	name,
-	revenue
+  name,
+  revenue
 FROM (
-		SELECT
+    SELECT
       f.name,
       SUM(b.slots *
         CASE
@@ -52,11 +52,11 @@ FROM (
       cd.facilities f ON b.facid = f.facid
     GROUP BY
       f.name
-	) AS fac
+  ) AS fac
 GROUP BY
-	name,
+  name,
   revenue
 HAVING
-	revenue < 1000
+  revenue < 1000
 ORDER BY
-	revenue
+  revenue

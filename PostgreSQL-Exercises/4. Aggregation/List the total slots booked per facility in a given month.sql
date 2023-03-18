@@ -4,15 +4,15 @@
 */
 
 SELECT
-	facid,
-	SUM(slots) AS "Total Slots"
+  facid,
+  SUM(slots) AS "Total Slots"
 FROM
-	cd.bookings
+  cd.bookings
 WHERE
-	starttime >= '2012/09/01 00:00:00'
-	AND
-	starttime < '2012/10/01 00:00:00'
+  starttime >= '2012/09/01 00:00:00'
+  AND
+  starttime < '2012/10/01 00:00:00'
 GROUP BY
-	facid
+  facid
 ORDER BY
-	"Total Slots"
+  "Total Slots"

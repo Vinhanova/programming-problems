@@ -9,58 +9,58 @@
 -- One Case:
 
 SELECT
-	m.firstname || ' ' || m.surname AS member,
-	f.name AS facility,
-	CASE
-		WHEN b.memid = 0 THEN b.slots * f.guestcost
-		ELSE b.slots * f.membercost
-	END AS cost
+  m.firstname || ' ' || m.surname AS member,
+  f.name AS facility,
+  CASE
+    WHEN b.memid = 0 THEN b.slots * f.guestcost
+    ELSE b.slots * f.membercost
+  END AS cost
 FROM
-	cd.members m,
-	cd.bookings b,
-	cd.facilities f
+  cd.members m,
+  cd.bookings b,
+  cd.facilities f
 WHERE
-	m.memid = b.memid
-	AND
-	b.facid = f.facid
-	AND
-	b.starttime >= '2012-09-14'
-	AND
-	b.starttime < '2012-09-15'
-	AND (
-	  (b.memid = 0 AND b.slots * f.guestcost > 30)
-	  OR	
-	  b.slots * f.membercost > 30
-	)
+  m.memid = b.memid
+  AND
+  b.facid = f.facid
+  AND
+  b.starttime >= '2012-09-14'
+  AND
+  b.starttime < '2012-09-15'
+  AND (
+    (b.memid = 0 AND b.slots * f.guestcost > 30)
+    OR	
+    b.slots * f.membercost > 30
+  )
 ORDER BY
-	cost DESC
+  cost DESC
 
 
 -- Double Case:
 
 SELECT
-	m.firstname || ' ' || m.surname AS member,
-	f.name AS facility,
-	CASE
-		WHEN b.memid = 0 THEN b.slots * f.guestcost
-		ELSE b.slots * f.membercost
-	END AS cost
+  m.firstname || ' ' || m.surname AS member,
+  f.name AS facility,
+  CASE
+    WHEN b.memid = 0 THEN b.slots * f.guestcost
+    ELSE b.slots * f.membercost
+  END AS cost
 FROM
-	cd.members m,
-	cd.bookings b,
-	cd.facilities f
+  cd.members m,
+  cd.bookings b,
+  cd.facilities f
 WHERE
-	m.memid = b.memid
-	AND
-	b.facid = f.facid
-	AND
-	b.starttime >= '2012-09-14'
-	AND
-	b.starttime < '2012-09-15'
-	AND
-	CASE
-		WHEN b.memid = 0 THEN b.slots * f.guestcost
-		ELSE b.slots * f.membercost
-	END > 30
+  m.memid = b.memid
+  AND
+  b.facid = f.facid
+  AND
+  b.starttime >= '2012-09-14'
+  AND
+  b.starttime < '2012-09-15'
+  AND
+  CASE
+    WHEN b.memid = 0 THEN b.slots * f.guestcost
+    ELSE b.slots * f.membercost
+  END > 30
 ORDER BY
-	cost DESC
+  cost DESC

@@ -7,15 +7,15 @@
 -- Correlated Subquery:
 
 SELECT DISTINCT
-	m1.firstname || ' ' || m1.surname as member,
-	( SELECT
-	  	m2.firstname || ' ' || m2.surname
-	  FROM
-	  	cd.members m2
-	  WHERE
-	  	m1.recommendedby = m2.memid
-	) AS recommender
+  m1.firstname || ' ' || m1.surname as member,
+  ( SELECT
+      m2.firstname || ' ' || m2.surname
+    FROM
+      cd.members m2
+    WHERE
+      m1.recommendedby = m2.memid
+  ) AS recommender
 FROM
-	cd.members m1
+  cd.members m1
 ORDER BY
-	member ASC
+  member ASC

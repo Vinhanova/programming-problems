@@ -4,13 +4,13 @@
 */
 
 SELECT
-	recommendedby,
-	COUNT(*)
+  recommendedby,
+  COUNT(*)
 FROM
-	cd.members
+  cd.members
 WHERE
-	recommendedby IS NOT NULL
+  recommendedby IS NOT NULL
 GROUP BY
-	recommendedby
+  recommendedby
 ORDER BY
-	recommendedby
+  recommendedby

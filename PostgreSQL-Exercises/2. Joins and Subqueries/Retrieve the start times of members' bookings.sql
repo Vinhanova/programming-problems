@@ -4,46 +4,46 @@
 -- Subquery:
 
 SELECT
-	starttime
+  starttime
 FROM
-	cd.bookings
+  cd.bookings
 WHERE
-	memid = (
-		SELECT
-	  		memid
-	  	FROM
-	  		cd.members
-	  	WHERE
-	  		firstname = 'David'
-	  		AND
-	  		surname = 'Farrell'
-	)
+  memid = (
+    SELECT
+        memid
+      FROM
+        cd.members
+      WHERE
+        firstname = 'David'
+        AND
+        surname = 'Farrell'
+  )
 
 
 -- Explicit Inner Join:
 
 SELECT
-	starttime
+  starttime
 FROM
-	cd.bookings b
-	INNER JOIN
-	cd.members m ON b.memid = m.memid
+  cd.bookings b
+  INNER JOIN
+  cd.members m ON b.memid = m.memid
 WHERE
-	m.firstname = 'David'
-	AND
-	m.surname = 'Farrell'
+  m.firstname = 'David'
+  AND
+  m.surname = 'Farrell'
 
 
 -- Implicit Inner Join:
 
 SELECT
-	b.starttime
+  b.starttime
 FROM
-	cd.bookings b,
-	cd.members m
+  cd.bookings b,
+  cd.members m
 WHERE
-	m.firstname = 'David'
-	AND
-	m.surname = 'Farrell'
-	AND
-	b.memid = m.memid
+  m.firstname = 'David'
+  AND
+  m.surname = 'Farrell'
+  AND
+  b.memid = m.memid

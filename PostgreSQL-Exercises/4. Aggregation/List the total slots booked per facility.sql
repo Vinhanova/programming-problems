@@ -4,11 +4,11 @@
 */
 
 SELECT
-	facid,
-	SUM(slots) AS "Total Slots"
+  facid,
+  SUM(slots) AS "Total Slots"
 FROM
-	cd.bookings
+  cd.bookings
 GROUP BY
-	facid
+  facid
 ORDER BY
-	facid
+  facid

@@ -7,39 +7,39 @@
 -- Explicit Inner Join:
 
 SELECT
-	f.name,
-	SUM(b.slots *
+  f.name,
+  SUM(b.slots *
     CASE
-		  WHEN b.memid = 0 THEN f.guestcost
-		  ELSE f.membercost
-		END
-	  ) AS revenue
+      WHEN b.memid = 0 THEN f.guestcost
+      ELSE f.membercost
+    END
+    ) AS revenue
 FROM
-	cd.facilities f
-	INNER JOIN
-	cd.bookings b ON b.facid = f.facid
+  cd.facilities f
+  INNER JOIN
+  cd.bookings b ON b.facid = f.facid
 GROUP BY
-	f.name
+  f.name
 ORDER BY
-	revenue
+  revenue
 
 
 -- Implicit Inner Join:
 
 SELECT
-	f.name,
-	SUM(b.slots *
+  f.name,
+  SUM(b.slots *
     CASE
-		  WHEN b.memid = 0 THEN f.guestcost
-		  ELSE f.membercost
-		END
-	  ) AS revenue
+      WHEN b.memid = 0 THEN f.guestcost
+      ELSE f.membercost
+    END
+    ) AS revenue
 FROM
-	cd.facilities f,
-	cd.bookings b
+  cd.facilities f,
+  cd.bookings b
 WHERE
-	b.facid = f.facid
+  b.facid = f.facid
 GROUP BY
-	f.name
+  f.name
 ORDER BY
-	revenue
+  revenue

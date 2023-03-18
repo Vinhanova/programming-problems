@@ -4,6 +4,6 @@
 */
 
 SELECT
-	COUNT(*)
+  COUNT(*)
 FROM
-	cd.facilities
+  cd.facilities
