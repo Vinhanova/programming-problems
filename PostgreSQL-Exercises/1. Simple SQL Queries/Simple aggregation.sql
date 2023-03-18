@@ -1,17 +1,17 @@
 -- You'd like to get the signup date of your last member. How can you retrieve this information?
 
 SELECT
-	MAX(joindate) AS latest
+  MAX(joindate) AS latest
 FROM
-	cd.members
+  cd.members
 
 -- Without agreggation:
 
 SELECT
-	joindate AS latest
+  joindate AS latest
 FROM
-	cd.members
+  cd.members
 ORDER BY
-	joindate DESC
+  joindate DESC
 LIMIT
-	1
+  1

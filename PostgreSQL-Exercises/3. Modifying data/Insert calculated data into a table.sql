@@ -10,22 +10,22 @@
 -- INSERT INTO ... SELECT (recommended):
 
 INSERT INTO
-	cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
+  cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
 SELECT (
-		SELECT
-			MAX(facid) + 1
-		FROM
-			cd.facilities
-	),'Spa', 20, 30, 100000, 800
+    SELECT
+      MAX(facid) + 1
+    FROM
+      cd.facilities
+  ),'Spa', 20, 30, 100000, 800
 
 
 -- INSERT INTO ... VALUES (should be used to insert only constant data):
 
 INSERT INTO
-	cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
+  cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
 VALUES ((
-		SELECT
-			MAX(facid) + 1
-		FROM
-			cd.facilities
-	),'Spa', 20, 30, 100000, 800)
+    SELECT
+      MAX(facid) + 1
+    FROM
+      cd.facilities
+  ),'Spa', 20, 30, 100000, 800)

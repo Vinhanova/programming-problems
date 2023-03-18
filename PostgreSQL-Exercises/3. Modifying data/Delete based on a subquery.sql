@@ -6,41 +6,41 @@
 -- Subquery:
 
 DELETE FROM
-	cd.members
+  cd.members
 WHERE
-	memid NOT IN (
-			SELECT DISTINCT
-				memid
-			FROM
-				cd.bookings
-		)
+  memid NOT IN (
+      SELECT DISTINCT
+        memid
+      FROM
+        cd.bookings
+    )
 
 -- Correlated Subquery:
 
 DELETE FROM
-	cd.members m
+  cd.members m
 WHERE
-	NOT EXISTS (
-			SELECT
-				1
-			FROM
-				cd.bookings
-			WHERE
-				memid = m.memid
-		)
+  NOT EXISTS (
+      SELECT
+        1
+      FROM
+        cd.bookings
+      WHERE
+        memid = m.memid
+    )
 
 -- OR
 
 DELETE FROM
-	cd.members m
+  cd.members m
 WHERE
-	NOT EXISTS (
-			SELECT
-				*
-			FROM
-				cd.bookings
-			WHERE
-				memid = m.memid
-			LIMIT
-				1
-		)
+  NOT EXISTS (
+      SELECT
+        *
+      FROM
+        cd.bookings
+      WHERE
+        memid = m.memid
+      LIMIT
+        1
+    )

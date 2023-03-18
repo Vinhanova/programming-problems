@@ -4,8 +4,8 @@
 */
 
 UPDATE
-	cd.facilities
+  cd.facilities
 SET
-	initialoutlay = 10000
+  initialoutlay = 10000
 WHERE
-	name LIKE 'Tennis Court 2'
+  name LIKE 'Tennis Court 2'

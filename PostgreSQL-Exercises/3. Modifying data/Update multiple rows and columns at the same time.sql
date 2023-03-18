@@ -4,9 +4,9 @@
 */
 
 UPDATE
-	cd.facilities
+  cd.facilities
 SET
-	membercost = 6,
-	guestcost = 30
+  membercost = 6,
+  guestcost = 30
 WHERE
-	name LIKE 'Tennis Court%'
+  name LIKE 'Tennis Court%'
