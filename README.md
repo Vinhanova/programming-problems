@@ -36,7 +36,7 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 - [Simple SQL Queries](#simple-sql-queries)
 - [Joins and Subqueries](#joins-and-subqueries)
 - [Modifying data](#modifying-data)
-- Aggregation
+- [Aggregation](#aggregation)
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
