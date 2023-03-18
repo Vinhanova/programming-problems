@@ -34,7 +34,7 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 
 # [PostgreSQL Exercises](https://pgexercises.com/)
 - [Simple SQL Queries](#simple-sql-queries)
-- Joins and Subqueries
+- [Joins and Subqueries](#joins-and-subqueries)
 - Modifying data
 - Aggregation
 
@@ -54,3 +54,16 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 |10|[Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Combining%20results%20from%20multiple%20queries.sql)
 |11|[Simple aggregation](https://pgexercises.com/questions/basic/agg.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Simple%20aggregation.sql)
 |12|[More aggregation](https://pgexercises.com/questions/basic/agg2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/More%20aggregation.sql)
+
+## [Joins and Subqueries](https://pgexercises.com/questions/joins/)
+
+|  #  |      Title     |   Solution
+|-----|----------------|---------------
+|1|[Retrieve the start times of members' bookings](https://pgexercises.com/questions/joins/simplejoin.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Retrieve%20the%20start%20times%20of%20members'%20bookings.sql)
+|2|[Work out the start times of bookings for tennis courts](https://pgexercises.com/questions/joins/simplejoin2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Work%20out%20the%20start%20times%20of%20bookings%20for%20tennis%20courts.sql)
+|3|[Produce a list of all members who have recommended another member](https://pgexercises.com/questions/joins/self.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20all%20members%20who%20have%20recommended%20another%20member.sql)
+|4|[Produce a list of all members, along with their recommender](https://pgexercises.com/questions/joins/self2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20all%20members%2C%20along%20with%20their%20recommender.sql)
+|5|[Produce a list of all members who have used a tennis court](https://pgexercises.com/questions/joins/threejoin.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20all%20members%20who%20have%20used%20a%20tennis%20court.sql)
+|6|[Produce a list of costly bookings](https://pgexercises.com/questions/joins/threejoin2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20costly%20bookings.sql)
+|7|[Produce a list of all members, along with their recommender, using no joins](https://pgexercises.com/questions/joins/sub.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20all%20members%2C%20along%20with%20their%20recommender%2C%20using%20no%20joins.sql)
+|8|[Produce a list of costly bookings, using a subquery](https://pgexercises.com/questions/joins/tjsub.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20costly%20bookings%2C%20using%20a%20subquery.sql)
