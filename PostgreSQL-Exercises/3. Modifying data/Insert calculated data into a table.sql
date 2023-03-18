@@ -12,10 +12,10 @@
 INSERT INTO
 	cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
 SELECT (
-  	SELECT
-		  MAX(facid) + 1
-	  FROM
-	  	cd.facilities
+		SELECT
+			MAX(facid) + 1
+		FROM
+			cd.facilities
 	),'Spa', 20, 30, 100000, 800
 
 
@@ -24,8 +24,8 @@ SELECT (
 INSERT INTO
 	cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
 VALUES ((
-    SELECT
-	  	MAX(facid) + 1
-	  FROM
-	  	cd.facilities
+		SELECT
+			MAX(facid) + 1
+		FROM
+			cd.facilities
 	),'Spa', 20, 30, 100000, 800)

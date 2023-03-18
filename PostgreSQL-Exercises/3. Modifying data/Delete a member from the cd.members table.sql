@@ -4,6 +4,6 @@
 */
 
 DELETE FROM
-	cd.members
+  cd.members
 WHERE
-	memid = 37
+  memid = 37

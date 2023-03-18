@@ -4,9 +4,9 @@
 */
 
 UPDATE
-	cd.facilities
+  cd.facilities
 SET
-	membercost = (
+  membercost = (
       SELECT
         membercost * 1.1
       FROM
@@ -14,6 +14,6 @@ SET
       WHERE
         name LIKE 'Tennis Court 1'
     ),
-	guestcost = (SELECT guestcost * 1.1 FROM cd.facilities WHERE name LIKE 'Tennis Court 1')
+  guestcost = (SELECT guestcost * 1.1 FROM cd.facilities WHERE name LIKE 'Tennis Court 1')
 WHERE
-	name LIKE 'Tennis Court 2'
+  name LIKE 'Tennis Court 2'

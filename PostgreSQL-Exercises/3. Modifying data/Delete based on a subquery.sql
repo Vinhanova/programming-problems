@@ -9,11 +9,11 @@ DELETE FROM
 	cd.members
 WHERE
 	memid NOT IN (
-	  	SELECT DISTINCT
-	  		memid
-	  	FROM
-	  		cd.bookings
-	  )
+			SELECT DISTINCT
+				memid
+			FROM
+				cd.bookings
+		)
 
 -- Correlated Subquery:
 
@@ -21,13 +21,13 @@ DELETE FROM
 	cd.members m
 WHERE
 	NOT EXISTS (
-	  	SELECT
-	  		1
-	  	FROM
-	  		cd.bookings
-	  	WHERE
-	  		memid = m.memid
-	  )
+			SELECT
+				1
+			FROM
+				cd.bookings
+			WHERE
+				memid = m.memid
+		)
 
 -- OR
 
@@ -35,12 +35,12 @@ DELETE FROM
 	cd.members m
 WHERE
 	NOT EXISTS (
-	  	SELECT
-	  		*
-	  	FROM
-	  		cd.bookings
-	  	WHERE
-	  		memid = m.memid
-      LIMIT
-        1
-	  )
+			SELECT
+				*
+			FROM
+				cd.bookings
+			WHERE
+				memid = m.memid
+			LIMIT
+				1
+		)

@@ -4,7 +4,7 @@
 */
 
 DELETE FROM
-	cd.bookings
+  cd.bookings
 
 
 -- OR TRUNCATE
