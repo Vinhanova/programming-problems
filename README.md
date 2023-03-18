@@ -1,5 +1,5 @@
 # Programming Problems
-Practicing programming problems logging my solutions • JavaScript, Python &amp; TypeScript &lt;Updating>
+Practicing programming problems logging my solutions • JavaScript, SQL, Python &amp; TypeScript &lt;Updating>
 - [LeetCode](#leetcode)
 - [PostgreSQL Exercises](#postgresql-exercises)
 
@@ -81,3 +81,30 @@ Practicing programming problems logging my solutions • JavaScript, Python &amp
 |7|[Delete all bookings](https://pgexercises.com/questions/updates/delete.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Delete%20all%20bookings.sql)
 |8|[Delete a member from the cd.members table](https://pgexercises.com/questions/updates/deletewh.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Delete%20a%20member%20from%20the%20cd.members%20table.sql)
 |9|[Delete based on a subquery](https://pgexercises.com/questions/updates/deletewh2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Delete%20based%20on%20a%20subquery.sql)
+
+## [Aggregation](https://pgexercises.com/questions/aggregates/)
+
+|  #  |      Title     |   Solution
+|-----|----------------|---------------
+|1|[Count the number of facilities](https://pgexercises.com/questions/aggregates/count.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Count%20the%20number%20of%20facilities.sql)
+|2|[Count the number of expensive facilities](https://pgexercises.com/questions/aggregates/count2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Count%20the%20number%20of%20expensive%20facilities.sql)
+|3|[Count the number of recommendations each member makes](https://pgexercises.com/questions/aggregates/count3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Count%20the%20number%20of%20recommendations%20each%20member%20makes.sql)
+|4|[List the total slots booked per facility](https://pgexercises.com/questions/aggregates/fachours.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/List%20the%20total%20slots%20booked%20per%20facility.sql)
+|5|[List the total slots booked per facility in a given month](https://pgexercises.com/questions/aggregates/fachoursbymonth.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/List%20the%20total%20slots%20booked%20per%20facility%20in%20a%20given%20month.sql)
+|6|[List the total slots booked per facility per month](https://pgexercises.com/questions/aggregates/fachoursbymonth2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/List%20the%20total%20slots%20booked%20per%20facility%20per%20month.sql)
+|7|[Find the count of members who have made at least one booking](https://pgexercises.com/questions/aggregates/members1.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Find%20the%20count%20of%20members%20who%20have%20made%20at%20least%20one%20booking.sql)
+|8|[List facilities with more than 1000 slots booked](https://pgexercises.com/questions/aggregates/fachours1a.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/List%20facilities%20with%20more%20than%201000%20slots%20booked.sql)
+|9|[Find the total revenue of each facility](https://pgexercises.com/questions/aggregates/facrev.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Find%20the%20total%20revenue%20of%20each%20facility.sql)
+|10|[Find facilities with a total revenue less than 1000](https://pgexercises.com/questions/aggregates/facrev2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Find%20facilities%20with%20a%20total%20revenue%20less%20than%201000.sql)
+|11|[Output the facility id that has the highest number of slots booked](https://pgexercises.com/questions/aggregates/fachours2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Output%20the%20facility%20id%20that%20has%20the%20highest%20number%20of%20slots%20booked.sql)
+|12|[List the total slots booked per facility per month, part 2](https://pgexercises.com/questions/aggregates/fachoursbymonth3.html)
+|13|[List the total hours booked per named facility](https://pgexercises.com/questions/aggregates/fachours3.html)
+|14|[List each member's first booking after September 1st 2012](https://pgexercises.com/questions/aggregates/nbooking.html)
+|15|[Produce a list of member names, with each row containing the total member count](https://pgexercises.com/questions/aggregates/countmembers.html)
+|16|[Produce a numbered list of members](https://pgexercises.com/questions/aggregates/nummembers.html)
+|17|[Output the facility id that has the highest number of slots booked, again](https://pgexercises.com/questions/aggregates/fachours4.html)
+|18|[Rank members by (rounded) hours used](https://pgexercises.com/questions/aggregates/rankmembers.html)
+|19|[Find the top three revenue generating facilities](https://pgexercises.com/questions/aggregates/facrev3.html)
+|20|[Classify facilities by value](https://pgexercises.com/questions/aggregates/classify.html)
+|21|[Calculate the payback time for each facility](https://pgexercises.com/questions/aggregates/payback.html)
+|22|[Calculate a rolling average of total revenue](https://pgexercises.com/questions/aggregates/rollingavg.html)
