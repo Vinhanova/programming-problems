@@ -4,6 +4,9 @@
   When calculating the aggregated values for all months and all facids, return null values in the month and facid columns.
 */
 
+
+-- ROLLUP (better solution):
+
 SELECT facid, EXTRACT(month FROM starttime) AS month, SUM(slots)
   FROM cd.bookings
   WHERE
@@ -15,12 +18,12 @@ ORDER BY facid, month
 
 -- UNION:
 
-SELECT facid, EXTRACT(MONTH FROM starttime) AS MONTH, SUM(slots) AS slots
+SELECT facid, EXTRACT(month FROM starttime) AS month, SUM(slots) AS slots
   FROM cd.bookings
   WHERE
     starttime >= '2012-01-01 00:00:00'
     AND starttime < '2013-01-01 00:00:00'
-  GROUP BY facid, MONTH
+  GROUP BY facid, month
 UNION ALL
 SELECT facid, NULL, SUM(slots) AS slots
   FROM cd.bookings
@@ -34,21 +37,21 @@ SELECT NULL, NULL, SUM(slots) AS slots
   WHERE
     starttime >= '2012-01-01 00:00:00'
     AND starttime < '2013-01-01 00:00:00'
-ORDER BY facid, MONTH
+ORDER BY facid, month
 
 
 -- UNION & CTE:
 
 WITH bookings AS (
-	SELECT facid, EXTRACT(MONTH FROM starttime) AS MONTH, slots
+	SELECT facid, EXTRACT(month FROM starttime) AS month, slots
 	FROM cd.bookings
 	WHERE
 		starttime >= '2012-01-01'
 		AND starttime < '2013-01-01'
 )
-SELECT facid, MONTH, SUM(slots) FROM bookings GROUP BY facid, MONTH
+SELECT facid, month, SUM(slots) FROM bookings GROUP BY facid, month
 UNION ALL
 SELECT facid, NULL, SUM(slots) FROM bookings GROUP BY facid
 UNION ALL
 SELECT NULL, NULL, SUM(slots) FROM bookings
-ORDER BY facid, MONTH;
+ORDER BY facid, month
