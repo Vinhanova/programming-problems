@@ -40,25 +40,25 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
-|  #  |      Title     |   Solution
-|-----|----------------|---------------
-|1|[Retrieve everything from a table](https://pgexercises.com/questions/basic/selectall.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Retrieve%20everything%20from%20a%20table.sql)
-|2|[Retrieve specific columns from a table](https://pgexercises.com/questions/basic/selectspecific.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Retrieve%20specific%20columns%20from%20a%20table.sql)
-|3|[Control which rows are retrieved](https://pgexercises.com/questions/basic/where.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Control%20which%20rows%20are%20retrieved.sql)
-|4|[Control which rows are retrieved - part 2](https://pgexercises.com/questions/basic/where2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Control%20which%20rows%20are%20retrieved%20-%20part%202.sql)
-|5|[Basic string searches](https://pgexercises.com/questions/basic/where3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Basic%20string%20searches.sql)
-|6|[Matching against multiple possible values](https://pgexercises.com/questions/basic/where4.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Matching%20against%20multiple%20possible%20values.sql)
-|7|[Classify results into buckets](https://pgexercises.com/questions/basic/classify.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Classify%20results%20into%20buckets.sql)
-|8|[Working with dates](https://pgexercises.com/questions/basic/date.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Working%20with%20dates.sql)
-|9|[Removing duplicates and ordering results](https://pgexercises.com/questions/basic/unique.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Removing%20duplicates%20and%20ordering%20results.sql)
-|10|[Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Combining%20results%20from%20multiple%20queries.sql)
-|11|[Simple aggregation](https://pgexercises.com/questions/basic/agg.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Simple%20aggregation.sql)
-|12|[More aggregation](https://pgexercises.com/questions/basic/agg2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/More%20aggregation.sql)
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
+|1|[Retrieve everything from a table](https://pgexercises.com/questions/basic/selectall.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Retrieve%20everything%20from%20a%20table.sql)|SELECT *
+|2|[Retrieve specific columns from a table](https://pgexercises.com/questions/basic/selectspecific.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Retrieve%20specific%20columns%20from%20a%20table.sql)|SELECT
+|3|[Control which rows are retrieved](https://pgexercises.com/questions/basic/where.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Control%20which%20rows%20are%20retrieved.sql)|WHERE
+|4|[Control which rows are retrieved - part 2](https://pgexercises.com/questions/basic/where2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Control%20which%20rows%20are%20retrieved%20-%20part%202.sql)|WHERE<br />AND
+|5|[Basic string searches](https://pgexercises.com/questions/basic/where3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Basic%20string%20searches.sql)|WHERE<br />LIKE
+|6|[Matching against multiple possible values](https://pgexercises.com/questions/basic/where4.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Matching%20against%20multiple%20possible%20values.sql)|WHERE<br />IN
+|7|[Classify results into buckets](https://pgexercises.com/questions/basic/classify.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Classify%20results%20into%20buckets.sql)|CASE<br />AS
+|8|[Working with dates](https://pgexercises.com/questions/basic/date.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Working%20with%20dates.sql)|SQL Timestamp Format
+|9|[Removing duplicates and ordering results](https://pgexercises.com/questions/basic/unique.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Removing%20duplicates%20and%20ordering%20results.sql)|DISTINCT<br />ORDER BY<br />LIMIT
+|10|[Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Combining%20results%20from%20multiple%20queries.sql)|UNION
+|11|[Simple aggregation](https://pgexercises.com/questions/basic/agg.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/Simple%20aggregation.sql)|MAX
+|12|[More aggregation](https://pgexercises.com/questions/basic/agg2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/1.%20Simple%20SQL%20Queries/More%20aggregation.sql)|Subquery<br />Scalar Table
 
 ## [Joins and Subqueries](https://pgexercises.com/questions/joins/)
 
-|  #  |      Title     |   Solution
-|-----|----------------|---------------
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
 |1|[Retrieve the start times of members' bookings](https://pgexercises.com/questions/joins/simplejoin.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Retrieve%20the%20start%20times%20of%20members'%20bookings.sql)
 |2|[Work out the start times of bookings for tennis courts](https://pgexercises.com/questions/joins/simplejoin2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Work%20out%20the%20start%20times%20of%20bookings%20for%20tennis%20courts.sql)
 |3|[Produce a list of all members who have recommended another member](https://pgexercises.com/questions/joins/self.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/2.%20Joins%20and%20Subqueries/Produce%20a%20list%20of%20all%20members%20who%20have%20recommended%20another%20member.sql)
@@ -70,8 +70,8 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 
 ## [Modifying data](https://pgexercises.com/questions/updates/)
 
-|  #  |      Title     |   Solution
-|-----|----------------|---------------
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
 |1|[Insert some data into a table](https://pgexercises.com/questions/updates/insert.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Insert%20some%20data%20into%20a%20table.sql)
 |2|[Insert multiple rows of data into a table](https://pgexercises.com/questions/updates/insert2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Insert%20multiple%20rows%20of%20data%20into%20a%20table.sql)
 |3|[Insert calculated data into a table](https://pgexercises.com/questions/updates/insert3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/3.%20Modifying%20data/Insert%20calculated%20data%20into%20a%20table.sql)
@@ -84,8 +84,8 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 
 ## [Aggregation](https://pgexercises.com/questions/aggregates/)
 
-|  #  |      Title     |   Solution   |   Tags
-|-----|----------------|---------------|---------------
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
 |1|[Count the number of facilities](https://pgexercises.com/questions/aggregates/count.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Count%20the%20number%20of%20facilities.sql)|COUNT
 |2|[Count the number of expensive facilities](https://pgexercises.com/questions/aggregates/count2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Count%20the%20number%20of%20expensive%20facilities.sql)|COUNT
 |3|[Count the number of recommendations each member makes](https://pgexercises.com/questions/aggregates/count3.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Count%20the%20number%20of%20recommendations%20each%20member%20makes.sql)|COUNT<br />GROUP BY
