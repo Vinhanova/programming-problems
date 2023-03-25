@@ -15,7 +15,7 @@ FROM
 WHERE
   b.facid = f.facid
   AND
-  f.name LIKE 'Tennis Court%' -- OR --> f.name in ('Tennis Court 1','Tennis Court 2')
+  f.name LIKE 'Tennis Court%' -- OR --> f.name IN ('Tennis Court 1','Tennis Court 2')
   AND
   b.starttime >= '2012-09-21'
   AND
@@ -34,7 +34,7 @@ FROM
   INNER JOIN
   cd.facilities f ON b.facid = f.facid
 WHERE
-  f.name in ('Tennis Court 1','Tennis Court 2')
+  f.name IN ('Tennis Court 1','Tennis Court 2')
   AND
   b.starttime >= '2012-09-21'
   AND
