@@ -37,6 +37,7 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 - [Joins and Subqueries](#joins-and-subqueries)
 - [Modifying data](#modifying-data)
 - [Aggregation](#aggregation)
+- [Working with Timestamps](#working-with-timestamps)
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
@@ -108,3 +109,18 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 |20|[Classify facilities by value](https://pgexercises.com/questions/aggregates/classify.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Classify%20facilities%20by%20value.sql)|Window Function<br />NTILE<br />CASE
 |21|[Calculate the payback time for each facility](https://pgexercises.com/questions/aggregates/payback.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Calculate%20the%20payback%20time%20for%20each%20facility.sql)|Subquery<br />CASE<br />SUM
 |22|[Calculate a rolling average of total revenue](https://pgexercises.com/questions/aggregates/rollingavg.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/4.%20Aggregation/Calculate%20a%20rolling%20average%20of%20total%20revenue.sql)|VIEW<br />RANGE<br />PRECEDING<br />GENERATE_SERIES<br/>INTERVAL<br />CAST
+
+## [Working with Timestamps](https://pgexercises.com/questions/date/)
+
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
+|1|[Produce a timestamp for 1 a.m. on the 31st of August 2012](https://pgexercises.com/questions/date/timestamp.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Produce%20a%20timestamp%20for%201%20a.m.%20on%20the%2031st%20of%20August%202012.sql)|TIMESTAMP<br />value::type syntax<br />CAST
+|2|[Subtract timestamps from each other](https://pgexercises.com/questions/date/interval.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Subtract%20timestamps%20from%20each%20other.sql)|INTERVAL
+|3|[Generate a list of all the dates in October 2012](https://pgexercises.com/questions/date/series.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Generate%20a%20list%20of%20all%20the%20dates%20in%20October%202012.sql)|GENERATE_SERIES
+|4|[Get the day of the month from a timestamp](https://pgexercises.com/questions/date/extract.html)
+|5|[Work out the number of seconds between timestamps](https://pgexercises.com/questions/date/interval2.html)
+|6|[Work out the number of days in each month of 2012](https://pgexercises.com/questions/date/daysinmonth.html)
+|7|[Work out the number of days remaining in the month](https://pgexercises.com/questions/date/daysremaining.html)
+|8|[Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html)
+|9|[Return a count of bookings for each month](https://pgexercises.com/questions/date/bookingspermonth.html)
+|10|[Work out the utilisation percentage for each facility by month](https://pgexercises.com/questions/date/utilisationpermonth.html)
