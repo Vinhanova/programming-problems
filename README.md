@@ -117,8 +117,8 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 |1|[Produce a timestamp for 1 a.m. on the 31st of August 2012](https://pgexercises.com/questions/date/timestamp.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Produce%20a%20timestamp%20for%201%20a.m.%20on%20the%2031st%20of%20August%202012.sql)|TIMESTAMP<br />value::type syntax<br />CAST
 |2|[Subtract timestamps from each other](https://pgexercises.com/questions/date/interval.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Subtract%20timestamps%20from%20each%20other.sql)|INTERVAL
 |3|[Generate a list of all the dates in October 2012](https://pgexercises.com/questions/date/series.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Generate%20a%20list%20of%20all%20the%20dates%20in%20October%202012.sql)|GENERATE_SERIES
-|4|[Get the day of the month from a timestamp](https://pgexercises.com/questions/date/extract.html)
-|5|[Work out the number of seconds between timestamps](https://pgexercises.com/questions/date/interval2.html)
+|4|[Get the day of the month from a timestamp](https://pgexercises.com/questions/date/extract.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Get%20the%20day%20of%20the%20month%20from%20a%20timestamp.sql)|EXTRACT
+|5|[Work out the number of seconds between timestamps](https://pgexercises.com/questions/date/interval2.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Work%20out%20the%20number%20of%20seconds%20between%20timestamps.sql)|EXTRACT(EPOCH)
 |6|[Work out the number of days in each month of 2012](https://pgexercises.com/questions/date/daysinmonth.html)
 |7|[Work out the number of days remaining in the month](https://pgexercises.com/questions/date/daysremaining.html)
 |8|[Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html)
