@@ -23,18 +23,18 @@ ORDER BY name
 
 -- Second approach:
 
-SELECT name, month, 
-	ROUND(
+SELECT name, month,
+  ROUND(
     100 * slots /
-		CAST(
-			25 * (CAST((month + INTERVAL '1 month') AS DATE)
-			- CAST (month AS DATE)) AS NUMERIC
+    CAST(
+      25 * (CAST((month + INTERVAL '1 month') AS DATE)
+      - CAST (month AS DATE)) AS NUMERIC
     ), 1
   ) AS utilisation
-	FROM (
-		SELECT f.name AS name, DATE_TRUNC('month', starttime) AS month, SUM(slots) AS slots
-			FROM cd.bookings b
-			INNER JOIN cd.facilities f ON b.facid = f.facid
-			GROUP BY f.facid, month
-	) AS monthtable
+  FROM (
+    SELECT f.name AS name, DATE_TRUNC('month', starttime) AS month, SUM(slots) AS slots
+      FROM cd.bookings b
+      INNER JOIN cd.facilities f ON b.facid = f.facid
+      GROUP BY f.facid, month
+  ) AS monthtable
 ORDER BY name, month
