@@ -38,6 +38,7 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 - [Modifying data](#modifying-data)
 - [Aggregation](#aggregation)
 - [Working with Timestamps](#working-with-timestamps)
+- [String Operations](#string-operations)
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
@@ -124,3 +125,15 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 |8|[Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Work%20out%20the%20end%20time%20of%20bookings.sql)|INTERVAL Multiplication<br />LIMIT
 |9|[Return a count of bookings for each month](https://pgexercises.com/questions/date/bookingspermonth.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Return%20a%20count%20of%20bookings%20for%20each%20month.sql)|DATE_TRUNC<br />COUNT
 |10|[Work out the utilisation percentage for each facility by month](https://pgexercises.com/questions/date/utilisationpermonth.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/5.%20Working%20with%20Timestamps/Work%20out%20the%20utilisation%20percentage%20for%20each%20facility%20by%20month.sql)|Subquery<br />ROUND<br />EPOCH
+
+## [String Operations](https://pgexercises.com/questions/string/)
+
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
+|1|[Format the names of members](https://pgexercises.com/questions/string/concat.html)|
+|2|[Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html)|
+|3|[Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html)|
+|4|[Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html)|
+|5|[Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html)|
+|6|[Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html)|
+|7|[Clean up telephone numbers](https://pgexercises.com/questions/string/translate.html)|
