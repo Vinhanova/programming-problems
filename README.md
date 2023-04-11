@@ -130,9 +130,9 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 
 |  #  |      Title     |    Solution    |     Tags
 |-----|----------------|----------------|---------------
-|1|[Format the names of members](https://pgexercises.com/questions/string/concat.html)|
-|2|[Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html)|
-|3|[Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html)|
+|1|[Format the names of members](https://pgexercises.com/questions/string/concat.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Format%20the%20names%20of%20members.sql)|Concatenation operator ||<br />CONCAT
+|2|[Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Find%20facilities%20by%20a%20name%20prefix.sql)|LIKE<br />%<br />_
+|3|[Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Perform%20a%20case-insensitive%20search.sql)|ILIKE<br />CREATE INDEX<br />UPPER
 |4|[Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html)|
 |5|[Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html)|
 |6|[Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html)|
