@@ -130,7 +130,7 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 
 |  #  |      Title     |    Solution    |     Tags
 |-----|----------------|----------------|---------------
-|1|[Format the names of members](https://pgexercises.com/questions/string/concat.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Format%20the%20names%20of%20members.sql)|Concatenation operator ||<br />CONCAT
+|1|[Format the names of members](https://pgexercises.com/questions/string/concat.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Format%20the%20names%20of%20members.sql)|\|\| Concatenation Operator<br />CONCAT
 |2|[Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Find%20facilities%20by%20a%20name%20prefix.sql)|LIKE<br />%<br />_
 |3|[Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Perform%20a%20case-insensitive%20search.sql)|ILIKE<br />CREATE INDEX<br />UPPER
 |4|[Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Find%20telephone%20numbers%20with%20parentheses.sql)|SIMILAR TO<br />~ Operator<br />Regex<br />POSITION
