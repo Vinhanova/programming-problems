@@ -5,11 +5,11 @@
 
 -- :: Operator:
 
-SELECT LPAD(zipcode::text, 5, '0')
+SELECT LPAD(zipcode::TEXT, 5, '0')
 	FROM cd.members
 
 
 -- CAST:
 
-SELECT LPAD(CAST(zipcode AS text), 5, '0')
+SELECT LPAD(CAST(zipcode AS TEXT), 5, '0')
 	FROM cd.members
