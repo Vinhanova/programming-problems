@@ -18,7 +18,7 @@ SELECT *
 
 -- Using index:
 
-CREATE INDEX idx_facility_name_upper ON cd.facilities (UPPER(name));
+CREATE INDEX idx_facilities_name_upper ON cd.facilities (UPPER(name));
 
 SELECT *
   FROM cd.facilities
