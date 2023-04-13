@@ -11,5 +11,5 @@ SELECT LPAD(zipcode::TEXT, 5, '0')
 
 -- CAST:
 
-SELECT LPAD(CAST(zipcode AS TEXT), 5, '0')
+SELECT LPAD(CAST(zipcode AS CHAR(5)), 5, '0')
 	FROM cd.members
