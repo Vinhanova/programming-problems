@@ -39,6 +39,7 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 - [Aggregation](#aggregation)
 - [Working with Timestamps](#working-with-timestamps)
 - [String Operations](#string-operations)
+- [Recursive Queries](#recursive-queries)
 
 ## [Simple SQL Queries](https://pgexercises.com/questions/basic/)
 
@@ -137,3 +138,11 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 |5|[Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Pad%20zip%20codes%20with%20leading%20zeroes.sql)|LPAD / RPAD<br />TEXT<br />CHAR
 |6|[Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Count%20the%20number%20of%20members%20whose%20surname%20starts%20with%20each%20letter%20of%20the%20alphabet.sql)|SUBSTRING<br />SUBSTR<br />LEFT
 |7|[Clean up telephone numbers](https://pgexercises.com/questions/string/translate.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/6.%20String%20Operations/Clean%20up%20telephone%20numbers.sql)|REGEXP_REPLACE<br />TRANSLATE
+
+## [Recursive Queries](https://pgexercises.com/questions/recursive/)
+
+|  #  |      Title     |    Solution    |     Tags
+|-----|----------------|----------------|---------------
+|1|[Find the upward recommendation chain for member ID 27](https://pgexercises.com/questions/recursive/getupward.html)|
+|2|[Find the downward recommendation chain for member ID 1](https://pgexercises.com/questions/recursive/getdownward.html)|
+|3|[Produce a CTE that can return the upward recommendation chain for any member](https://pgexercises.com/questions/recursive/getupwardall.html)|
