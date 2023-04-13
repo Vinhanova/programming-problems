@@ -6,10 +6,10 @@
 -- :: Operator:
 
 SELECT LPAD(zipcode::TEXT, 5, '0')
-	FROM cd.members
+  FROM cd.members
 
 
 -- CAST:
 
 SELECT LPAD(CAST(zipcode AS CHAR(5)), 5, '0')
-	FROM cd.members
+  FROM cd.members
