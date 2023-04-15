@@ -143,6 +143,6 @@ Practicing programming problems logging my solutions • JavaScript, SQL, Python
 
 |  #  |      Title     |    Solution    |     Tags
 |-----|----------------|----------------|---------------
-|1|[Find the upward recommendation chain for member ID 27](https://pgexercises.com/questions/recursive/getupward.html)|
-|2|[Find the downward recommendation chain for member ID 1](https://pgexercises.com/questions/recursive/getdownward.html)|
+|1|[Find the upward recommendation chain for member ID 27](https://pgexercises.com/questions/recursive/getupward.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/7.%20Recursive%20Queries/Find%20the%20upward%20recommendation%20chain%20for%20member%20ID%2027.sql)|WITH RECURSIVE<br />UNION ALL<br />INNER JOIN
+|2|[Find the downward recommendation chain for member ID 1](https://pgexercises.com/questions/recursive/getdownward.html)|[SQL](https://github.com/Vinhanova/programming-problems/blob/main/PostgreSQL-Exercises/7.%20Recursive%20Queries/Find%20the%20downward%20recommendation%20chain%20for%20member%20ID%201.sql)|WITH RECURSIVE<br />UNION ALL<br />INNER JOIN
 |3|[Produce a CTE that can return the upward recommendation chain for any member](https://pgexercises.com/questions/recursive/getupwardall.html)|
