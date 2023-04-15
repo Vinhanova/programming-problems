@@ -2,19 +2,28 @@
 -- Return member ID, first name, and surname
 -- Order by descending member id
 
+-- Example:
 
--- First try (still needs corrections):
+WITH RECURSIVE NAME(columns) as (
+  <initial statement>
+  UNION ALL 
+  <recursive statement>
+)
 
-WITH RECURSIVE recommended_tree (memid, recommendedby, firstname, surname) AS (
-  	SELECT memid, recommendedby, firstname, surname
-  		FROM cd.members
-  		WHERE memid = 27
-  	UNION ALL
-  	SELECT m.memid, m.recommendedby, m.firstname, m.surname
-  		FROM cd.members m
-  		INNER JOIN recommended_tree ON m.memid = recommended_tree.recommendedby
+
+-- First approach:
+
+WITH RECURSIVE recommended_tree AS (
+    SELECT memid, recommendedby, firstname, surname
+      FROM cd.members
+      WHERE memid = 27
+    UNION ALL
+    SELECT m.memid, m.recommendedby, m.firstname, m.surname
+      FROM cd.members m
+      INNER JOIN recommended_tree rt ON m.memid = rt.recommendedby
   )
 
 
-SELECT memid, recommendedby AS recommender, firstname, surname
-	FROM recommended_tree
+SELECT memid AS recommender, firstname, surname
+  FROM recommended_tree
+  WHERE memid != 27
