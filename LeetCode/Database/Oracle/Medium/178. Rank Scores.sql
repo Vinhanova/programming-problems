@@ -21,7 +21,6 @@
   The query result format is in the following example.
 
   
-
   Example 1:
 
   Input: 
@@ -48,6 +47,7 @@
   | 3.50  | 4    |
   +-------+------+
 */
+
 
 SELECT
   score,

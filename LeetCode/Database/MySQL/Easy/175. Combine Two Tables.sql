@@ -66,6 +66,7 @@
     addressId = 1 contains information about the address of personId = 2.
 */
 
+
 SELECT
   p.firstName,
   p.lastName,
