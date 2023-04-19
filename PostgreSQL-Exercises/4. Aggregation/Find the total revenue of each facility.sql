@@ -9,8 +9,8 @@
 SELECT
   f.name,
   SUM(b.slots *
-    CASE
-      WHEN b.memid = 0 THEN f.guestcost
+    CASE b.memid
+      WHEN 0 THEN f.guestcost
       ELSE f.membercost
     END
     ) AS revenue
