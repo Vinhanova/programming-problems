@@ -10,7 +10,7 @@
   employee_id is the primary key for this table.
   Each row of this table indicates the employee ID, employee name, and salary.
   
-
+  
   Write an SQL query to calculate the bonus of each employee. The bonus of an employee is 100% of their salary if the ID of the employee is an odd number and the employee name does not start with the character 'M'. The bonus of an employee is 0 otherwise.
   Return the result table ordered by employee_id.
   The query result format is in the following example.
@@ -19,16 +19,16 @@
   Example 1:
 
     Input: 
-      Employees table:
-      +-------------+---------+--------+
-      | employee_id | name    | salary |
-      +-------------+---------+--------+
-      | 2           | Meir    | 3000   |
-      | 3           | Michael | 3800   |
-      | 7           | Addilyn | 7400   |
-      | 8           | Juan    | 6100   |
-      | 9           | Kannon  | 7700   |
-      +-------------+---------+--------+
+    Employees table:
+    +-------------+---------+--------+
+    | employee_id | name    | salary |
+    +-------------+---------+--------+
+    | 2           | Meir    | 3000   |
+    | 3           | Michael | 3800   |
+    | 7           | Addilyn | 7400   |
+    | 8           | Juan    | 6100   |
+    | 9           | Kannon  | 7700   |
+    +-------------+---------+--------+
 
     Output: 
     +-------------+-------+
