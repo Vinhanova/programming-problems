@@ -50,6 +50,7 @@ var maxSubArray = function (nums) {
   maxSum = currSum = nums[0]
 
   for (let i = 1; i < nums.length; i++) {
+    // if you sum and it's less than the current number, use the current number
     currSum = Math.max(nums[i], currSum + nums[i])
     maxSum = Math.max(maxSum, currSum)
   }
